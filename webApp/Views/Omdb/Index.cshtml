@@ -1,0 +1,8 @@
+﻿@model OmdbSearchResult
+<h1>Omdb</h1>
+<ul>
+    @foreach (OmdbResult result in Model.Search)
+    {
+        <li>@result.Title (@result.Year)</li>
+    }
+</ul>

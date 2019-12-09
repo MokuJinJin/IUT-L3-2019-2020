@@ -1,0 +1,11 @@
+﻿@model MaClasse
+@using (Html.BeginForm("Renseigner", "MonPremier", FormMethod.Post))
+{
+    @Html.LabelFor(item => item.Chaine)
+    @Html.TextBoxFor(item => item.Chaine)
+
+    @Html.LabelFor(item => item.Entier)
+    @Html.TextBoxFor(item => item.Entier)
+
+    <input type="submit" value="Ajouter"/>
+}

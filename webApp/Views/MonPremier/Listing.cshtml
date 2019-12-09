@@ -1,0 +1,21 @@
+﻿@model List<MaClasse>
+@{
+}
+
+<h1>Listing</h1>
+<ul>
+    @foreach (MaClasse item in Model)
+    {
+        <li>@item.Chaine</li>
+    }
+</ul>
+@using (Html.BeginForm("Ajouter", "MonPremier", FormMethod.Get))
+{
+    @Html.LabelFor(model => model.First().Chaine)
+    <br/>
+    @Html.TextBoxFor(item => item.First().Chaine)
+
+
+
+}
+
