@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using System.Text;
 
-namespace webApp.Models
+namespace Contrat.DTO
 {
-    public class OmdbSearchResult
+    public class DtoOmdbSearchResult
     {
-        public List<OmdbResult> Search { get; set; }
+
+        public List<DtoOmdbResult> Search { get; set; }
         public int totalResults { get; set; }
         public bool Response { get; set; }
     }

@@ -3,6 +3,10 @@
 <ul>
     @foreach (OmdbResult result in Model.Search)
     {
-        <li>@result.Title (@result.Year)</li>
+        <li>
+            @result.Title (@result.Year)
+            &nbsp;
+            @Html.ActionLink("Détails","Details","Omdb",new {result.imdbID})
+        </li>
     }
 </ul>

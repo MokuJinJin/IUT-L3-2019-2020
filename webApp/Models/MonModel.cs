@@ -37,18 +37,18 @@ namespace webApp.Models
 
         public void Method()
         {
-            try
-            {
+            //try
+            //{
 
-            }
-            catch(NullReferenceException e)
-            {
+            //}
+            //catch(NullReferenceException e)
+            //{
 
-            }
-            catch (Exception e)
-            {
+            //}
+            //catch (Exception e)
+            //{
 
-            }
+            //}
             List<IModel> list = new List<IModel>();
             list.Add(new ModelEnfant());
             list.Add(new ModelAutre());

@@ -57,7 +57,7 @@ namespace webApp
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=MonPremier}/{action=Listing}/{id?}");
+                    template: "{controller=Omdb}/{action=Index}/{id?}");
             });
         }
     }

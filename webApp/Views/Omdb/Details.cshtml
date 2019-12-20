@@ -1,0 +1,14 @@
+﻿@model OmdbResultFull
+@{
+    ViewData["Title"] = "Detail";
+}
+
+<h2>Detail</h2>
+
+<img src="@Model.Poster" />
+<ul>
+@foreach (Ratings rating in Model.Ratings)
+{
+    <li>@rating.Source : @rating.Value</li>
+}
+</ul>
